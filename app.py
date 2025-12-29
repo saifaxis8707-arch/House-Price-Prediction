@@ -33,7 +33,7 @@ def ml_model(X,y):
   return model
 
 model = ml_model(scaled_X,y)
-house_price = model.predict(user_x)[0]
+house_price = model.predict(user_X)[0]
 
 final_price = round(house_price * 100000,2)
 
@@ -43,6 +43,7 @@ with st.spinner('Predicting Hose price'):
 
 st.success(f'Estimated House Price is:$ {final_price}')
 st.markdown('''**Designe and Developed by: saif**''')
+
 
 
 
